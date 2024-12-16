@@ -1,0 +1,51 @@
+### Request GET untuk mengambil data pengguna
+GET http://localhost:5000/users
+
+
+### Request POST untuk membuat pengguna baru
+POST http://localhost:5000/post/users
+Content-Type: application/json
+
+{
+  "username" : "daffaputra",
+  "nama": "Daffa Putra",
+  "email": "daffa@gmail.com"
+}
+
+
+### Request POST untuk membuat pengguna baru
+POST http://localhost:5000/post/users
+Content-Type: application/json
+
+### Request POST untuk membuat pengguna baru
+DELETE  http://localhost:5000/post/users/delete/13
+
+### Request POST untuk membuat pengguna baru
+PUT  http://localhost:5000/post/users/update/9
+
+{
+  "username" : "halooo",
+  "nama": "hasil update",
+  "email": "hasilupdate@gmail.com"
+}
+
+
+### Request POST untuk membuat kursus baru
+POST http://localhost:5000/kursus/post
+Content-Type: application/json
+
+{
+    "nama_kursus": "UX Research",
+    "harga": "100000",
+    "kategori_id": 23
+}
+
+
+### Request POST untuk membuat kategori baru
+POST http://localhost:5000/kategori/post
+Content-Type: application/json
+
+{
+  "nama" : "Design",
+  "kategori_id": 23
+}
